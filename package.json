@@ -1,0 +1,32 @@
+{
+  "name": "phoenix",
+  "description": "A Blueprint API parser in javascript",
+  "author": "Thomas Beutler",
+  "version": "0.0.1",
+  "liscence": "MIT",
+  "directories" : {
+    "lib" : "./lib/coffee-script"
+  },
+  "main" : "./lib/coffee-script/phoenix.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tcbeutler/phoenix.git"
+  },
+  "engines": {
+    "node": ">=0.10.21"
+  },
+  "scripts": {
+    "test": "cake test",
+    "cover": "node node_modules/istanbul/lib/cli.js cover -x **/swagger/** -x swaggerConfig.js -x app.js node_modules/mocha/bin/_mocha"
+  },
+  "dependencies": {
+    "jison": "~0.4.13"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "mocha": "~1.14.0",
+    "istanbul": "~0.1.44",
+    "sinon": "~1.7.3",
+    "proxyquire": "~0.5.1"
+  }
+}
